@@ -105,10 +105,10 @@ export default{
       this.chatMsg = ''
     },
     scrollToBottom () {
-      let container = document.querySelector(".chat-content");
-      let scrollHeight = container.scrollHeight;
-      container.scrollTop = scrollHeight;
-		}
+      let container = document.querySelector('.chat-content')
+      let scrollHeight = container.scrollHeight
+      container.scrollTop = scrollHeight
+    }
   },
   computed: {
     ...mapGetters([
@@ -119,8 +119,8 @@ export default{
     ])
   },
   updated () {
-		this.scrollToBottom()	
-	},
+    this.scrollToBottom()
+  },
   components: {
     'my-msg': MyMsg,
     'other-msg': OtherMsg
