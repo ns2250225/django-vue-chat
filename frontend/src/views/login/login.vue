@@ -51,7 +51,7 @@ export default{
 }
 </script>
 
-<style>
+<style scoped>
 .login {
   position: absolute;
   left: 0;

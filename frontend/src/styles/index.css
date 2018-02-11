@@ -7,3 +7,13 @@ html,body{
 div.mu-pagination {
     justify-content: center;
 }
+
+.mu-text-field {
+    width: 100%;
+  }
+.mu-text-field.has-label .mu-text-field-label.float {
+    color: #121315;
+}
+.mu-raised-button {
+    margin-top: 20px;
+}
