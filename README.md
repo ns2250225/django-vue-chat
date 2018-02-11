@@ -16,3 +16,7 @@
 - 后端：启动redis-server -> python manage.py runserver 0.0.0.0:9090
 - 访问：localhost:8080
 
+---
+# 在线Demo
+- 用户名必填，密码随意
+- http://45.77.142.21/#/login
