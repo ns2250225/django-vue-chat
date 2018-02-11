@@ -23,4 +23,4 @@
 
 ---
 # 效果图
-![Alt Text](../demo.gif)
+![](./demo.gif)
