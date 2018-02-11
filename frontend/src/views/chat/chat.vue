@@ -69,6 +69,7 @@ export default{
     this.$store.dispatch('SetChatMsg')
     // 加载历史对话信息
     this.$store.dispatch('GetMessHistory')
+    // 自动滚动到底部
     setTimeout(() => {
       this.$nextTick(() => {
         this.container.scrollTop = 10000
@@ -102,7 +103,12 @@ export default{
       this.$store.dispatch('AddMessHistory', msgData)
       this.getSocket.send(JSON.stringify(msgData))
       this.chatMsg = ''
-    }
+    },
+    scrollToBottom () {
+      let container = document.querySelector(".chat-content");
+      let scrollHeight = container.scrollHeight;
+      container.scrollTop = scrollHeight;
+		}
   },
   computed: {
     ...mapGetters([
@@ -112,6 +118,9 @@ export default{
       'getMsgHistoryInfo'
     ])
   },
+  updated () {
+		this.scrollToBottom()	
+	},
   components: {
     'my-msg': MyMsg,
     'other-msg': OtherMsg
@@ -126,7 +135,7 @@ export default{
 }
 .chat-content {
   width: 100%;
-  height: 100%;
+  height: 500px;
   overflow: scroll;
   background: #ffffff;
 }

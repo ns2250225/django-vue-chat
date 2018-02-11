@@ -11,10 +11,10 @@
         <mu-list-item title="马清雄" describeText="姓名">
           <mu-icon value="face" color="indigo" slot="left"/>
         </mu-list-item>
-        <mu-list-item title="http://blog.csdn.net/ns2250225" describeText="技术博客">
+        <mu-list-item title="http://blog.csdn.net/ns2250225" describeText="技术博客" href="http://blog.csdn.net/ns2250225">
           <mu-icon value="book" color="indigo" slot="left"/>
         </mu-list-item>
-        <mu-list-item title="https://github.com/ns2250225" describeText="GitHub">
+        <mu-list-item title="https://github.com/ns2250225" describeText="GitHub" href="https://github.com/ns2250225">
           <mu-icon value="backup" color="indigo" slot="left"/>
         </mu-list-item>
         <mu-list-item title="243027571@qq.com" describeText="邮箱">

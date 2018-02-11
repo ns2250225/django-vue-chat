@@ -76,8 +76,8 @@ export default{
 .mu-text-field {
   width: 100%;
 }
-.mu-text-field-label.float {
-  color: rgba(0,0,0);
+.mu-text-field.has-label .mu-text-field-label.float {
+  color: #121315;
 }
 .mu-raised-button {
   margin-top: 20px;
